@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>img</title>
+    <title>video, audio</title>
 
     <style>
 
@@ -210,12 +210,12 @@
     <nav>
         <br> <br> <br> <br> <br> <br> <br> 
         <hr>
-        <h1 id="h1"> property </h1>
+        <h1 id="h1"> tag </h1>
         <ul class="menu">
-            <li> <a href="#_blank">_width</a> </li>
-            <li> <a href="#_self">_height</a> </li>
-            <li> <a href="#_parent">_alt</a> </li>
-            <li> <a href="#_top">_title</a> </li>
+            <li> <a href="#_blank">autoplay</a> </li>
+            <li> <a href="#_self">loop</a> </li>
+            <li> <a href="#_parent">volume</a> </li>
+            <li> <a href="#_top">muted</a> </li>
         </ul>
         <hr>
     </nav>
@@ -226,9 +226,10 @@
 
     <hr>
 
-    <p id="p7"> &lt;img scr="" alt=""&gt;
-    <br>
-    scr="" : "사진파일의 이름을 쓰는곳 입니다."</p>
+    <p id="p7">  &lt;audio src="" controls&gt;&lt;/audio&gt;  <br>
+                 &lt;video src="" controls&gt;&lt;/video&gt; 
+
+   </p>
     
     <hr id="_blank">
 
@@ -254,24 +255,24 @@
     <!-- _blank -->
 
     <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">width=""</p> 
+    <p class="font">autoplay</p> 
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;img src="ex.png" alt="예시 이미지" width="350"&gt; <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> audio <br> . <br> . <br> &lt;audio controls autoplay&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/audio&gt;  <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
 
-    <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
-    <!-- 출력 이미지 예 -->
-
+    <div class="ex"> <hr class="hr1"> <p> audio <br> . <br> . <br> &lt;video controls autoplay&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/video&gt;  <br> . <br> <hr class="hr1">  </p>   </div>  
+    <!-- 예시 코드 -->
+    
     <p id="p5"></p>  <!-- 공백 -->
 
     <p style="text-align: center;"> 
 
         <br>
-        이미지의 너비를 지정할 수 있습니다.
+        음악 및 동영상을 자동으로 재생 
 
     </p>
 
@@ -291,24 +292,24 @@
     <!-- _self -->
     
     <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">height=""</p>
+    <p class="font">loop</p>
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br> &lt;img src="ex.png" alt="" height="280"&gt; <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1">  <p> audio <br> . <br> . <br>  &lt;audio controls loop&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/audio&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
 
-    <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
-    <!-- 출력 이미지 예 -->
+    <div class="ex"> <hr class="hr1">  <p> video <br> . <br> . <br> &lt;video controls loop&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/video&gt;  <br> . <br> <hr class="hr1">  </p>   </div>  
+    <!-- 예시 코드 -->
 
     <p id="p5"></p>  <!-- 공백 -->
 
     <p style="text-align: center;"> 
 
         <br>
-        이미지의 높이를 지정할 수 있습니다
+        현재 오디오, 동영상을 반복 재생
 
     </p>
 
@@ -325,11 +326,11 @@
      <!-- _parent -->
 
      <!-- 부가 설명의 핵심(제목) -->
-     <p class="font">alt=""</p>
+     <p class="font">volume</p>
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;img src="ex.png" alt="예시 이미지 대체텍스트"&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;audio controls loop&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/audio&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -342,7 +343,7 @@
      <p style="text-align: center;"> 
  
          <br>
-         사진이 깨져 안 보이는 경우 대체텍스트를 사용해 이미지 대신 텍스트로 쓰는 속성
+         오디오, 동영상 재생 볼륨 설정할 수 있는 속성
      </p>
  
      <!-- 문구 아래 공백 -->
@@ -358,7 +359,7 @@
      <!-- _top -->
 
      <!-- 부가 설명의 핵심(제목) -->
-     <p class="font">title=""</p>
+     <p class="font">muted</p>
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
@@ -375,7 +376,7 @@
      <p style="text-align: center;"> 
  
          <br>
-        툴팁 : 마우스 커서를 이미지에 올렸을때 나올 텍스트를 지정하는 속성
+         오디오, 비디오 출력 음소거
      </p>
  
      <!-- 문구 아래 공백 -->
