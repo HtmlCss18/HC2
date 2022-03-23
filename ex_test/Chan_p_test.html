@@ -6,13 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>출력 화면</title>
     <style>
+
+        .music {
+            height: 265px;
+            width: 610px;
+        }
+
+        .music2 {
+            height: 100px;
+            width: 610px;
+        }
+
+         hr {
+            background-color: #755139;
+            height: 3px;
+        }
+
+         /* 선 가로 크기 지정 */
+         .hr1 {
+            width: 700px;
+        }
+
+        /* 이미지 가운데 정렬 */
+        .ex_img {
+            text-align: center;
+            float: left;
+        }
+
     </style>
 </head>
 <body>
-    <ul>
-        <li> 내용 </li>
-        <li> 내용 </li>
-        <li> 내용 </li>
-        </ul>
+    <div class="ex_img"> 
+        <hr class="hr1"> 
+        <video class="music" src="exAudioVidio/Skyscrapers - 80724.mp4"></video>
+        <audio autoplay controls class="music2" src="exAudioVidio/N i G H T S - Basic.mp3"></audio> <hr class="hr1"> <br>
+     </div>
+    <!-- 출력 이미지 예 -->
 </body>
 </html>
