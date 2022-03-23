@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기본 구조 태그</title>
+    <title>input 유형 태그 속성</title>
 
     <style>
 
@@ -143,6 +143,13 @@
         padding: 2em;
         }
 
+        .footer3 {
+            position: fixed;
+            left: -2%;
+            bottom: 2.4%;
+            padding: 2em;
+        }
+
         button, button::after {
             -webkit-transition: all 0.3s;
 	        -moz-transition: all 0.3s;
@@ -210,16 +217,25 @@
     <nav>
         <br> <br> <br> <br> <br> <br> <br> 
         <hr>
-        <h1 id="h1"> 기본 구조 </h1>
+        <h1 id="h1"> 유형 </h1>
         <ul class="menu">
-            <li> <a href="#&lt;!doctype&gt;">&lt;!doctype&gt;</a> </li>
-            <li> <a href="#&lt;html&gt;">&lt;html&gt;</a> </li>
-            <li> <a href="#&lt;head&gt;">&lt;head&gt;</a> </li>
-            <li> <a href="#&lt;meta&gt;">&lt;meta&gt;</a> </li>
-            <li> <a href="#&lt;title&gt;">&lt;title&gt;</a> </li>
-            <li> <a href="#&lt;body&gt;">&lt;body&gt;</a> </li>
+            <li> <a href="#radio">radio</a> </li>
+            <li> <a href="#datetime">datetime</a> </li>
+            <li> <a href="#datetime-local">datetime-local</a> </li>
+            <li> <a href="#date">date</a> </li>
+            <li> <a href="#month">month</a> </li>
+            <li> <a href="#week">week</a> </li>
+            <li> <a href="#time">time</a> </li>
+            <li> <a href="#button">button</a> </li>
+            <li> <a href="#file">file</a> </li>
+            <li> <a href="#submit">submit</a> </li>
+            <li> <a href="#image submit">image submit</a> </li>
+            <li> <a href="#reset">reset</a> </li>
+
         </ul>
         <hr>
+
+
     </nav>
 
     <div style="text-align:center;">
@@ -228,11 +244,11 @@
 
     <hr>
 
-    <p id="p7"> &lt;!doctype&gt;
+    <p id="p7"> &lt;input&gt; 
     <br>
-    문서 유형을 지정하는 것입니다. 웹 브라우저가 페이지를 어떻게 해석해야 하는지 알려줍니다.</p>
+    사용자가 정보를 입력하는 부분을 만들어야 할 때 사용합니다. <br> type에 따라 어떤 형식으로 정보를 받을지 결정됩니다. <br> id 값을 통해 서로 구분할 수도 있습니다.</p>
     
-    <hr id="&lt;!doctype&gt;">
+    <hr id="autocomplete">
 
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer2">
@@ -244,28 +260,36 @@
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer1">
     <div class="wrap">
-    <button class="btn-4" onclick="location.href='basic_structure.html'">전화면으로 이동</button> <!-- 기본 문서 구조 설명하는 페이지 이동 -->
+    <button class="btn-4" onclick="location.href='input.html'">전화면으로 이동</button> <!-- input 태그 설명하는 페이지 이동 -->
     </div>
-    </footer>
+    </footer>     
+
+
+         <!-- 왼쪽 하단에 있는 버튼 -->
+         <footer class="footer3">
+        <div class="wrap">
+        <button class="btn-4" onclick="location.href='input_type_tag.html'"> 이전 </button> <!-- 전 화면으로 이동 -->
+        </div>
+        </footer>  
     
      <!-- 수평선 사이 공백 -->
      <p id="gap"> </p>
 
     <hr>
 
-    <!-- !doctype --> 
+    <!-- autocomplete -->
 
     <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">&lt;!doctype&gt;</p>
+    <p class="font">autocomplete 속성</p> 
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;!doctype html&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;a href="https://github.com/HtmlCss18" target="_blank"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
 
-    <div class="ex_img"> <hr class="hr1"> <img src="" alt="" class=""> <hr class=""> </div>
+    <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
     <!-- 출력 이미지 예 -->
 
     <p id="p5"></p>  <!-- 공백 -->
@@ -280,7 +304,7 @@
     <!-- 문구 아래 공백 -->
     <p id="p6"></p>
 
-    <hr id="&lt;html&gt;">
+    <hr id="autofocus">
 
     <!-- 수평선 사이 공백 -->
     <p id="gap"> </p>
@@ -288,19 +312,19 @@
     <hr>
 
 
-    <!-- html -->
+    <!-- autofocus -->
     
     <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">&lt;html&gt;</p>
+    <p class="font">autofocus 속성</p>
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br> &lt;html lang="en"&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br> &lt;a href="https://github.com/HtmlCss18" target="_self"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
 
-    <div class="ex_img"> <hr class="hr1"> <img src="" alt="" class=""> <hr class=""> </div>
+    <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
     <!-- 출력 이미지 예 -->
 
     <p id="p5"></p>  <!-- 공백 -->
@@ -315,26 +339,26 @@
     <!-- 문구 아래 공백 -->
     <p id="p6"></p>
 
-    <hr id="&lt;head&gt;">
+    <hr id="placeholder">
 
      <!-- 수평선 사이 공백 -->
      <p id="gap"> </p>
 
     <hr>
 
-     <!-- head -->
+     <!-- placeholder -->
 
      <!-- 부가 설명의 핵심(제목) -->
-     <p class="font">&lt;head&gt;&lt;/head&gt;</p>
+     <p class="font">placeholder 속성</p>
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;head&gt;&lt;/head&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;a href="https://github.com/HtmlCss18" target="_parent"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
  
-     <div class="ex_img"> <hr class="hr1"> <img src="" alt="" class=""> <hr class=""> </div>
+     <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
      <!-- 출력 이미지 예 -->
  
      <p id="p5"></p>  <!-- 공백 -->
@@ -349,21 +373,21 @@
      <!-- 문구 아래 공백 -->
      <p id="p6"></p>
  
-    <hr  id="&lt;meta&gt;">
+    <hr  id="readonly">
 
      <!-- 수평선 사이 공백 -->
      <p id="gap"> </p>
 
     <hr>
 
-     <!-- meta -->
+     <!-- readonly -->
 
      <!-- 부가 설명의 핵심(제목) -->
-     <p class="font">&lt;meta&gt;</p>
+     <p class="font">readonly 속성</p>
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;meta charset="UTF-8"&gt; <br> &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt; <br> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;input type="text" value="only read" readonly&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -382,26 +406,27 @@
  
      <!-- 문구 아래 공백 -->
      <p id="p6"></p>
-     <hr  id="&lt;title&gt;">
+
+     <hr  id="required">
 
      <!-- 수평선 사이 공백 -->
      <p id="gap"> </p>
+ 
+     <hr>
 
-    <hr>
-
-     <!-- title -->
+     <!-- required -->
 
      <!-- 부가 설명의 핵심(제목) -->
-     <p class="font">&lt;title&gt;</p>
+     <p class="font">required 속성</p>
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;title&gt;&lt;/title&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;input type="text" name="name" required&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
  
-     <div class="ex_img"> <hr class="hr1"> <img src="" alt="" class=""> <hr class=""> </div>
+     <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
      <!-- 출력 이미지 예 -->
  
      <p id="p5"></p>  <!-- 공백 -->
@@ -416,23 +441,162 @@
      <!-- 문구 아래 공백 -->
      <p id="p6"></p>
 
-    <!-- 수평선 사이 공백 -->
+     <hr  id="pattern">
+
+     <!-- 수평선 사이 공백 -->
      <p id="gap"> </p>
-     <hr  id="&lt;body&gt;">
-     
-     <!-- body -->
+ 
+     <hr>
+
+     <!-- pattern -->
 
      <!-- 부가 설명의 핵심(제목) -->
-     <p class="font">&lt;body&gt; &lt;/body&gt;</p>
+     <p class="font">pattern 속성</p>
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;body&gt;&lt;/body&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;input type="text" pattern="(010)-\d{3,4}-\d{4}" title="형식 010-0000-0000"&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
  
-     <div class="ex_img"> <hr class="hr1"> <img src="" alt="" class=""> <hr class=""> </div>
+     <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
+     <!-- 출력 이미지 예 -->
+ 
+     <p id="p5"></p>  <!-- 공백 -->
+ 
+     <p style="text-align: center;"> 
+ 
+         <br>
+         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 최상위 탭에서 전환되게 됩니다.
+         <br>최상위 탭이 없다면 현재 창에서 화면이 넘어가게 됩니다.
+     </p>
+ 
+     <!-- 문구 아래 공백 -->
+     <p id="p6"></p>
+
+     <hr  id="max">
+
+     <!-- 수평선 사이 공백 -->
+     <p id="gap"> </p>
+ 
+     <hr>
+
+     <!-- max -->
+
+     <!-- 부가 설명의 핵심(제목) -->
+     <p class="font">max 속성</p>
+
+     <p id="p2">  </p> <!-- 가로 공백 -->
+     
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;input type="text" value="only read" readonly&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <!-- 예시 코드 -->
+ 
+     <p class="break"> </p> <!-- 공백 -->
+ 
+     <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
+     <!-- 출력 이미지 예 -->
+ 
+     <p id="p5"></p>  <!-- 공백 -->
+ 
+     <p style="text-align: center;"> 
+ 
+         <br>
+         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 최상위 탭에서 전환되게 됩니다.
+         <br>최상위 탭이 없다면 현재 창에서 화면이 넘어가게 됩니다.
+     </p>
+ 
+     <!-- 문구 아래 공백 -->
+     <p id="p6"></p>
+
+     <hr  id="min">
+
+     <!-- 수평선 사이 공백 -->
+     <p id="gap"> </p>
+ 
+     <hr>
+
+     <!-- min -->
+
+     <!-- 부가 설명의 핵심(제목) -->
+     <p class="font">min 속성</p>
+
+     <p id="p2">  </p> <!-- 가로 공백 -->
+     
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;input type="text" value="only read" readonly&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <!-- 예시 코드 -->
+ 
+     <p class="break"> </p> <!-- 공백 -->
+ 
+     <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
+     <!-- 출력 이미지 예 -->
+ 
+     <p id="p5"></p>  <!-- 공백 -->
+ 
+     <p style="text-align: center;"> 
+ 
+         <br>
+         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 최상위 탭에서 전환되게 됩니다.
+         <br>최상위 탭이 없다면 현재 창에서 화면이 넘어가게 됩니다.
+     </p>
+ 
+     <!-- 문구 아래 공백 -->
+     <p id="p6"></p>
+
+     <hr  id="maxLength">
+
+     <!-- 수평선 사이 공백 -->
+     <p id="gap"> </p>
+ 
+     <hr>
+
+     <!-- maxLength -->
+
+     <!-- 부가 설명의 핵심(제목) -->
+     <p class="font">maxLength 속성</p>
+
+     <p id="p2">  </p> <!-- 가로 공백 -->
+     
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;input type = "text" maxlength = "20"&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <!-- 예시 코드 -->
+ 
+     <p class="break"> </p> <!-- 공백 -->
+ 
+     <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
+     <!-- 출력 이미지 예 -->
+ 
+     <p id="p5"></p>  <!-- 공백 -->
+ 
+     <p style="text-align: center;"> 
+ 
+         <br>
+         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 최상위 탭에서 전환되게 됩니다.
+         <br>최상위 탭이 없다면 현재 창에서 화면이 넘어가게 됩니다.
+     </p>
+ 
+     <!-- 문구 아래 공백 -->
+     <p id="p6"></p>
+
+     <hr  id="step">
+
+     <!-- 수평선 사이 공백 -->
+     <p id="gap"> </p>
+ 
+     <hr>
+
+     <!-- step -->
+
+     <!-- 부가 설명의 핵심(제목) -->
+     <p class="font">step 속성</p>
+
+     <p id="p2">  </p> <!-- 가로 공백 -->
+     
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;input type="text" value="only read" readonly&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <!-- 예시 코드 -->
+ 
+     <p class="break"> </p> <!-- 공백 -->
+ 
+     <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
      <!-- 출력 이미지 예 -->
  
      <p id="p5"></p>  <!-- 공백 -->
