@@ -264,7 +264,12 @@
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;a href="https://github.com/HtmlCss18" target="_blank"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name"&gt; <br>
+        학번 : &lt;input type="text" name="st_id" autocomplete="on"&gt; <br>
+        학과 : &lt;input type="text" name="department" autocomplete="off"&gt; <br>
+        &lt;input type="submit"&gt;
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
@@ -274,10 +279,10 @@
 
     <p id="p5"></p>  <!-- 공백 -->
 
-    <p style="text-align: center;"> 
+    <p style="text-align: center;">
 
         <br>
-        예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 새로운 창에서 넘어가게 됩니다.
+        &lt;input&gt; 태그의 autocomplete 속성은 &lt;input&gt; 요소에서 자동 완성 기능을 사용할지 여부를 명시합니다.
 
     </p>
 
@@ -299,7 +304,12 @@
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br> &lt;a href="https://github.com/HtmlCss18" target="_self"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br>     &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name"&gt; <br>
+        학번 : &lt;input type="text" name="st_id" autofocus&gt;<br>
+        학과 : &lt;input type="text" name="department"&gt;<br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
@@ -312,7 +322,7 @@
     <p style="text-align: center;"> 
 
         <br>
-        예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 창에서 넘어가게 됩니다.
+        &lt;input&gt; 태그의 autofocus 속성은 페이지가 로드될 때 자동으로 포커스(focus)가 &lt;input&gt; 요소로 이동됨을 명시합니다.
 
     </p>
 
@@ -333,7 +343,11 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;a href="https://github.com/HtmlCss18" target="_parent"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name" placeholder="홍길동"&gt; <br>
+        학번 : &lt;input type="text" name="st_id" placeholder="2010123456"&gt;<br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -346,9 +360,7 @@
      <p style="text-align: center;"> 
  
          <br>
-         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 창에서 넘어가게 됩니다.
-         <br>현재 화면을 불러낸 창이 없다면 현재 탭에서 화면이 넘어가게 됩니다.
-     </p>
+         &lt;input&gt; 태그의 placeholder 속성은 입력 필드에 사용자가 적절한 값을 입력할 수 있도록 도와주는 짧은 도움말을 명시합니다. </p>
  
      <!-- 문구 아래 공백 -->
      <p id="p6"></p>
@@ -367,7 +379,11 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;input type="text" value="only read" readonly&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name"&gt; <br>
+        학과 : &lt;input type="text" name="department" value="컴퓨터공학과" readonly&gt; <br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -380,8 +396,7 @@
      <p style="text-align: center;"> 
  
          <br>
-         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 최상위 탭에서 전환되게 됩니다.
-         <br>최상위 탭이 없다면 현재 창에서 화면이 넘어가게 됩니다.
+         &lt;input&gt; 태그의 readonly 속성은 &lt;input&gt; 요소의 입력 필드가 읽기 전용임을 명시합니다.
      </p>
  
      <!-- 문구 아래 공백 -->
@@ -401,7 +416,11 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;input type="text" name="name" required&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name" required&gt; <br>
+        학과 : &lt;input type="text" name="department"&gt; <br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -414,8 +433,7 @@
      <p style="text-align: center;"> 
  
          <br>
-         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 최상위 탭에서 전환되게 됩니다.
-         <br>최상위 탭이 없다면 현재 창에서 화면이 넘어가게 됩니다.
+         &lt;input&gt; 태그의 required 속성은 폼 데이터(form data)가 서버로 제출되기 전 반드시 채워져 있어야 하는 입력 필드를 명시합니다.
      </p>
  
      <!-- 문구 아래 공백 -->
@@ -435,7 +453,10 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;input type="text" pattern="(010)-\d{3,4}-\d{4}" title="형식 010-0000-0000"&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        전화번호 : &lt;input type="text" pattern="(010)-\d{3,4}-\d{4}" title="형식 010-0000-0000"&gt; <br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -448,8 +469,7 @@
      <p style="text-align: center;"> 
  
          <br>
-         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 최상위 탭에서 전환되게 됩니다.
-         <br>최상위 탭이 없다면 현재 창에서 화면이 넘어가게 됩니다.
+         &lt;input&gt; 태그의 pattern 속성은 폼 제출 시 &lt;input&gt; 요소의 값을 검사할 때 사용될 정규 표현식(regular expression)을 명시합니다.
      </p>
  
      <!-- 문구 아래 공백 -->
@@ -469,7 +489,12 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;input type="text" value="only read" readonly&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name"&gt; <br>
+        생년월일 : &lt;input type="date" name="bday" min="1900-01-01" max="2019-01-01"&gt;<br>
+        학년 : &lt;input type="number" name="grader" min="1" max="4" &gt;<br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -482,8 +507,7 @@
      <p style="text-align: center;"> 
  
          <br>
-         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 최상위 탭에서 전환되게 됩니다.
-         <br>최상위 탭이 없다면 현재 창에서 화면이 넘어가게 됩니다.
+         &lt;input&gt; 태그의 max 속성은 &lt;input&gt; 요소의 최댓값을 명시합니다.
      </p>
  
      <!-- 문구 아래 공백 -->
@@ -503,7 +527,12 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;input type="text" value="only read" readonly&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name"&gt; <br>
+        생년월일 : &lt;input type="date" name="bday" min="1900-01-01" max="2019-01-01"&gt;<br>
+        학년 : &lt;input type="number" name="grader" min="1" max="4" &gt;<br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -516,8 +545,7 @@
      <p style="text-align: center;"> 
  
          <br>
-         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 최상위 탭에서 전환되게 됩니다.
-         <br>최상위 탭이 없다면 현재 창에서 화면이 넘어가게 됩니다.
+         &lt;input&gt; 태그의 min 속성은 &lt;input&gt; 요소의 최솟값을 명시합니다.
      </p>
  
      <!-- 문구 아래 공백 -->
@@ -537,7 +565,12 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;input type = "text" maxlength = "20"&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name" maxlength="8"&gt; <br>
+        학번 : &lt;input type="text" name="st_id" maxlength="12"&gt; <br>
+        학과 : &lt;input type="text" name="department"&gt;<br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -550,8 +583,7 @@
      <p style="text-align: center;"> 
  
          <br>
-         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 최상위 탭에서 전환되게 됩니다.
-         <br>최상위 탭이 없다면 현재 창에서 화면이 넘어가게 됩니다.
+         &lt;input&gt; 태그의 maxlength 속성은 &lt;input&gt; 요소에 입력할 수 있는 최대 문자수를 명시합니다.
      </p>
  
      <!-- 문구 아래 공백 -->
@@ -571,7 +603,10 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;input type="text" value="only read" readonly&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        1부터 20까지의 짝수 : &lt;input type="number" name="even" min="2" max="20" step="2"&gt; <br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -583,10 +618,9 @@
  
      <p style="text-align: center;"> 
  
-         <br>
-         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 최상위 탭에서 전환되게 됩니다.
-         <br>최상위 탭이 없다면 현재 창에서 화면이 넘어가게 됩니다.
-     </p>
+    <br>
+    &lt;input&gt; 태그의 step 속성은 &lt;input&gt; 요소에 입력할 수 있는 숫자들 사이의 간격을 명시합니다.
+    </p>
  
      <!-- 문구 아래 공백 -->
      <p id="p6"></p>
