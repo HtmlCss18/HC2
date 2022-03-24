@@ -299,7 +299,12 @@
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br> &lt;input autofocus&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br>     &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name"&gt; <br>
+        학번 : &lt;input type="text" name="st_id" autofocus&gt;<br>
+        학과 : &lt;input type="text" name="department"&gt;<br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
@@ -333,7 +338,11 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;a href="https://github.com/HtmlCss18" target="_parent"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name" placeholder="홍길동"&gt; <br>
+        학번 : &lt;input type="text" name="st_id" placeholder="2010123456"&gt;<br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -365,7 +374,11 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;input type="text" value="only read" readonly&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name"&gt; <br>
+        학과 : &lt;input type="text" name="department" value="컴퓨터공학과" readonly&gt; <br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -398,7 +411,11 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;input type="text" name="name" required&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name" required&gt; <br>
+        학과 : &lt;input type="text" name="department"&gt; <br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -431,7 +448,10 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;input type="text" pattern="(010)-\d{3,4}-\d{4}" title="형식 010-0000-0000"&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        전화번호 : &lt;input type="text" pattern="(010)-\d{3,4}-\d{4}" title="형식 010-0000-0000"&gt; <br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -464,7 +484,12 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;input type="text" value="only read" readonly&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name"&gt; <br>
+        생년월일 : &lt;input type="date" name="bday" min="1900-01-01" max="2019-01-01"&gt;<br>
+        학년 : &lt;input type="number" name="grader" min="1" max="4" &gt;<br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -497,7 +522,12 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;input type="text" value="only read" readonly&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name"&gt; <br>
+        생년월일 : &lt;input type="date" name="bday" min="1900-01-01" max="2019-01-01"&gt;<br>
+        학년 : &lt;input type="number" name="grader" min="1" max="4" &gt;<br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -530,7 +560,12 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;input type = "text" maxlength = "20"&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name" maxlength="8"&gt; <br>
+        학번 : &lt;input type="text" name="st_id" maxlength="12"&gt; <br>
+        학과 : &lt;input type="text" name="department"&gt;<br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
@@ -563,7 +598,10 @@
 
      <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;input type="text" value="only read" readonly&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        1부터 20까지의 짝수 : &lt;input type="number" name="even" min="2" max="20" step="2"&gt; <br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
