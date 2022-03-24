@@ -1,0 +1,314 @@
+<!-- 긴 설명이 아예 없을 때 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뭐라 써야하지1</title>
+
+    <style>
+
+    body {
+            background-color: #F2EDD7;
+            color: #755139;
+        }
+
+        hr {
+            background-color: #755139;
+            height: 3px;
+        }
+
+        /* 가로 정렬 */
+        .ex, #p2 {
+            float: left;
+        }
+
+        /* 이미지 가운데 정렬 */
+        .ex_img {
+            text-align: center;
+            float: left;
+        }
+        
+        .break {
+            float: left;
+            width: 50px;
+        }
+
+        /* 제목 글씨 크기 바꾸기 */
+        #p1 {
+            font-size: 50px;
+        }
+
+        /* 예시 문구 옆 공백 */
+        #p2 {
+            float: left;
+            width: 250px;
+        }
+
+        .music {
+            height: 286px;
+            width: 660px;
+            float: static;
+        }
+
+        .music2 {
+            height: 60px;
+            width: 610px;
+            float: static;
+
+        }
+
+         /* 선 가로 크기 지정 */
+        .hr1 {
+            width: 700px;
+        }
+
+        /* 이미지 크기 */ 
+        .img1 {
+            height: 265px;
+            width: 610px;
+        }
+
+         /* 예시 문구 위 공백 */
+        #p4 {
+            height: 50px;
+        }
+
+        /* 예시 문구 아래 공백 */
+        #p5 {
+            clear: left;
+            height: 105px;
+        }
+
+        #p6 {
+            color: #755139;
+            text-align: center;
+        }
+
+        /* 부가 설명의 제목 부분 */
+        #font {
+        text-align: center;
+        font-size: 30px;
+        }
+
+        /* 맨 위에 있는 target에 대한 설명 부분 */
+         #p7 {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        /* 전체 p태그에 20px 넣기 */
+        p {
+            font-size: 20px;
+        }
+
+        /* 화면 옆 고정된 메뉴바 */
+        nav {
+            width: 200px;
+            background-color: #eee;
+            border-right: 1px solid #ddd;
+            position: fixed;
+            height: 90%;
+            bottom: 7%;
+        }
+
+        /* 화면 옆 고정된 메뉴바 - 제목 */
+        #h1 {
+            font-size: 25px;
+            padding: 20px;
+            height: 15px;
+        }
+
+        /* 화면 옆 고정된 메뉴바 - 목록 */
+        .menu li a{
+            height: 30px;
+            line-height: 10px;
+            display: block;
+            padding: 0 20px;
+            font-size: 15px;
+            color: #755139;
+        }
+        
+        /* 화면 옆 고정된 메뉴바 - 마우스 커서가 목록 위로 이동하였을 때 */
+        .menu li a:hover {
+            color: blue;
+        }
+
+
+        /* 고정 버튼 꾸미기 */
+        .footer1 {
+        position:fixed; 
+        left:-2%; 
+        bottom:80.1%; 
+        padding: 2em;
+        }
+
+        .footer2 {
+        position:fixed; 
+        left:-2%; 
+        bottom:87.1%; 
+        padding: 2em;
+        }
+
+        button, button::after {
+            -webkit-transition: all 0.3s;
+	        -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+	        transition: all 0.3s;   
+        }
+
+        .btn-4 {
+            width: 200px;
+            height: 50px;
+        }
+
+        #button1 {
+            background: none;
+            border: 3px solid #755139;
+            border-radius: 5px;
+            color: #eee;
+            display: block;
+            font-size: 13px;
+            font-weight: bold;
+            margin: 1em auto;
+            position: relative;
+        }
+
+        button {
+            background: none;
+            border: 3px solid #755139;
+        }
+
+        button::before, button::after {
+            background: #eee;
+            content: '';
+            position: absolute;
+            z-index: -1;
+        }
+
+        button:hover {
+            color: #755139;
+        }
+
+        /* BUTTON 4 */
+        .btn-4::before {
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn-4::after {
+            background: #755139;
+            height: 100%;
+            left: 0;
+            top: 0;
+            width: 100%;
+        }
+
+        .btn-4:hover:after {
+            height: 0;
+            left: 50%;
+            top: 50%;
+             width: 0;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- 메뉴바-->
+    <nav>
+        <br> <br> <br> <br> <br> <br> <br> 
+        <hr>
+        <h1 id="h1"> 속성 </h1>
+        <ul class="menu">
+            <li> <a href="#part1">autoplay</a> </li>
+            <li> <a href="#part2">loop</a> </li>
+            <li> <a href="#part3">volume</a> </li>
+            <li> <a href="#part4">muted</a> </li>
+        </ul>
+        <hr>
+    </nav>
+
+    <!-- 왼쪽 상단에 있는 버튼 -->
+    <footer class="footer2">
+        <div class="wrap">
+        <button id="button1" class="btn-4" onclick="location.href='video.html'"> 홈페이지로 이동하기 </button> <!-- 메인 화면으로 이동 -->
+        </div>
+        </footer>  
+    
+        <!-- 왼쪽 상단에 있는 버튼 -->
+        <footer class="footer1">
+        <div class="wrap">
+        
+        <!-- a태그 설명하는 페이지 이동 -->
+        <button id="button1" class="btn-4" onclick="location.href='audio.html'"> 전화면으로 이동 </button> 
+        
+        </div>
+        </footer>     
+
+
+    <div style="text-align: center;">
+        <p id="p1">html</p> <!-- 제목 -->
+    </div>
+
+    <hr>
+
+    <h1 id="font">  </h1>
+    <p id="p7">  &lt;audio src="" controls&gt;&lt;/audio&gt;  <br>
+                 &lt;video src="" controls&gt;&lt;/video&gt; 
+
+    </p>
+    
+    <hr>
+
+    <p id--="font">autoplay</p> 
+
+ 
+
+    <p id="p2">  </p> <!-- 가로 공백 -->
+    
+    <div class="ex"> 
+        <button>
+            <div class="ex_img"> 
+                <hr class="hr1"> 
+                <p style="text-align: left;"> . <br> . <br> . <br> . <br>
+                    &lt;video controls loop&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/video&gt; <br>
+                    <br> &lt;audio controls loop&gt; <br>  &lt;source src=" " type=""&gt;  <br> &lt;/audio&gt; <br> . <br> . <br> . <br> . <br>
+                <hr class="hr2">
+             </div>
+        </button>     
+        </div>  
+    <!-- 예시 코드 -->
+
+    <p class="break"> </p> <!-- 공백 -->
+
+    <div class="ex_img"> 
+        <button>
+            <div class="ex_img"> 
+                <hr class="hr1"> 
+                <video class="music" src="Skyscrapers - 80724.mp4"></video>   <hr class="hr1">
+                <audio autoplay controls class="music2" src="N i G H T S - Basic.mp3"></audio>
+                <hr class="hr2">
+             </div>
+        </button>
+    </div>
+   
+    <br>
+    <br>
+    <br>
+    <p id="p5"></p>  <!-- 공백 -->
+  
+    <p id="p6">설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 설명 </p>
+
+
+    <hr>
+
+</body>
+</html>
