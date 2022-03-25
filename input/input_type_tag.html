@@ -249,7 +249,7 @@
     <br>
     사용자가 정보를 입력하는 부분을 만들어야 할 때 사용합니다. <br> type에 따라 어떤 형식으로 정보를 받을지 결정됩니다. <br> id 값을 통해 서로 구분할 수도 있습니다.</p>
     
-    <hr id="autocomplete">
+    <hr id="hidden">
 
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer2">
@@ -261,7 +261,7 @@
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer1">
     <div class="wrap">
-    <button class="btn-4" onclick="location.href='input.html'">전화면으로 이동</button> <!-- input 태그 설명하는 페이지 이동 -->
+    <button class="btn-4" onclick="location.href='input.html'">전화면으로 이동 <br> 메인 화면</button> <!-- input 태그 설명하는 페이지 이동 -->
     </div>
     </footer>     
 
@@ -272,20 +272,25 @@
         <button class="btn-4" onclick="location.href='input_type_tag_2.html'"> 더 많은 유형 알아보기</button> <!-- 메인 화면으로 이동 -->
         </div>
         </footer>  
-    
-     <!-- 수평선 사이 공백 -->
+        
+    <!-- 수평선 사이 공백 -->
      <p id="gap"> </p>
 
     <hr>
 
-    <!-- autocomplete -->
+    <!-- hidden -->
 
     <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">autocomplete 속성</p> 
+    <p class="font">hidden 타입</p> 
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;a href="https://github.com/HtmlCss18" target="_blank"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        아이디 : &lt;input type="text" name="user_id"&gt; <br>
+        비밀번호 : &lt;input type="password" name="user_pw"&gt; <br>
+        &lt;input type="hidden" id="gameToken" name="game_token" value="xm234jq"&gt; <br>
+        &lt;input type="submit"&gt; <br>
+    </form> <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
@@ -297,15 +302,15 @@
 
     <p style="text-align: center;"> 
 
-        <br>
-        예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 새로운 창에서 넘어가게 됩니다.
-
+        <br> 
+        문법 : &lt;input type="hidden"&gt; <br>
+        사용자에게는 보이지 않는 숨겨진 입력 필드를 정의합니다.
     </p>
 
     <!-- 문구 아래 공백 -->
     <p id="p6"></p>
 
-    <hr id="autofocus">
+    <hr id="text">
 
     <!-- 수평선 사이 공백 -->
     <p id="gap"> </p>
@@ -313,14 +318,17 @@
     <hr>
 
 
-    <!-- autofocus -->
+    <!-- text -->
     
     <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">autofocus 속성</p>
+    <p class="font">text 타입</p>
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br> &lt;a href="https://github.com/HtmlCss18" target="_self"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br> &lt;form action="/examples/media/action_target.php" method="get"&gt; <br>
+        이름 : &lt;input type="text" name="st_name"&gt;<br>
+        &lt;input type="submit"&gt; <br>
+    &lt;/form&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
@@ -332,8 +340,8 @@
 
     <p style="text-align: center;"> 
 
-        <br>
-        예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 창에서 넘어가게 됩니다.
+        <br> &lt;input type="text"&gt; <br>
+        type 속성의 기본값으로, 한 줄로 된 텍스트 필드를 정의합니다.
 
     </p>
 
