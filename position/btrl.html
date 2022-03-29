@@ -6,9 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>목록 태그 종류</title>
+    <title>a 태그 target 속성</title>
 
     <style>
+
+        #ex1 {
+            position: relative;
+            bottom: -100px;
+        }
 
         /* 이 화면 전체의 글자 색깔과 바탕화면 */
         body {
@@ -29,7 +34,6 @@
 
         /* 이미지 가운데 정렬 */
         .ex_img {
-            text-align: center;
             float: left;
         }
         
@@ -74,7 +78,7 @@
 
         /* 긴 글 아래 공백 */
         #p6 {
-            height: 50px;
+            height: 20px;
         }
 
         /* 부가 설명의 제목 부분 */
@@ -97,7 +101,7 @@
         
         /* 화면 옆 고정된 메뉴바 */
         nav {
-            width: 210px;
+            width: 200px;
             background-color: #eee;
             border-right: 1px solid #ddd;
             position: fixed;
@@ -210,26 +214,25 @@
     <nav>
         <br> <br> <br> <br> <br> <br> <br> 
         <hr>
-        <h1 id="h1"> list </h1>
+        <h1 id="h1"> position: ; </h1>
         <ul class="menu">
-            <li> <a href="#&lt;ul&gt;">&lt;ul&gt;</a> </li>
-            <li> <a href="#&lt;ol&gt;">&lt;ol&gt;</a> </li>
-            <li> <a href="#&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;">&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</a> </li>
+            <li> <a href="#bottom">bottom</a> </li>
+            <li> <a href="#top">top</a> </li>
+            <li> <a href="#right">right</a> </li>
+            <li> <a href="#left">left</a> </li>
         </ul>
         <hr>
     </nav>
 
     <div style="text-align:center;">
-        <p id="p1">html</p> <!-- 제목 -->
+        <p id="p1">css</p> <!-- 제목 -->
     </div>
 
     <hr>
 
-    <p id="p7"> &lt;li&gt; &lt;/li&gt; 
-    <br>
-    &lt;ul&gt;태그와 &lt;ol&gt;태그 안에서 각 항목을 나열</p>
+    <p id="p7"> bottom, top, right, left 속성 <br> 어떠한 기준으로 부터 어떤 거리만큼 위치시킬건지 지정하는 속성입니다. </p>
     
-    <hr id="&lt;ul&gt;">
+    <hr id="bottom">
 
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer2">
@@ -241,28 +244,30 @@
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer1">
     <div class="wrap">
-    <button class="btn-4" onclick="location.href='list.html'">전화면으로 이동</button> <!-- a태그 설명하는 페이지 이동 -->
+    <button class="btn-4" onclick="location.href='a_tag.html'">부가 설명 보러가기</button> <!-- a태그 설명하는 페이지 이동 -->
     </div>
     </footer>     
     
+
      <!-- 수평선 사이 공백 -->
      <p id="gap"> </p>
 
     <hr>
 
-    <!-- ul -->
+    <!-- _blank -->
 
     <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">&lt;ul&gt; &lt;/ul&gt;</p> 
+    <p class="font">bottom: auto | length | initial | inherit;</p> 
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;ul&gt; <br> &lt;li&gt; 내용 &lt;/li&gt; <br> &lt;li&gt; 내용 &lt;/li&gt; <br> &lt;li&gt; 내용 &lt;/li&gt; <br> &lt;/ul&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: static; <br> &nbsp;&nbsp;&nbsp;-bottom: 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
+        <br> ︙ <br> &lt;body&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
 
-    <div class="ex_img"> <hr class="hr1"> <img src="list_tag_img/li_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
+    <div class="ex_img"> <hr class="hr1"> <p id="ex1"> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
     <!-- 출력 이미지 예 -->
 
     <p id="p5"></p>  <!-- 공백 -->
@@ -270,40 +275,34 @@
     <p style="text-align: center;"> 
 
         <br>
-        unordered list, 순서가 없는 list입니다.
-        <br> 순서가 없기 때문에 앞에 글자 앞에 ●같은 불릿이 붙습니다. ( css설정으로 없앨 수 있습니다. ex> list-style: none; )
+        bottom은 해당 태그 위치를 하단 기준으로 어느 높이에 위치시킬건지 지정하는 속성입니다. <br>
+        예시 코드는 bottom값을 -100px를 주었는데요. 만약 100px를 주었다면 
+
 
     </p>
 
     <!-- 문구 아래 공백 -->
     <p id="p6"></p>
 
-    <hr id="&lt;ol&gt;">
+    <hr id="_self">
 
     <!-- 수평선 사이 공백 -->
     <p id="gap"> </p>
     
-    <hr>
+    <hr id="top">
 
-
-    <!-- ol -->
-    
     <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">&lt;ol&gt; &lt;/ol&gt;</p>
+    <p class="font">position:relative;</p> 
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br> &lt;ol&gt; <br> &lt;li&gt; 내용 &lt;/li&gt; <br> &lt;li&gt; 내용 &lt;/li&gt; <br> &lt;li&gt; 내용 &lt;/li&gt; <br> &lt;/ol&gt; <br> 예시 문구   <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
+        <br> ︙ <br> &lt;body&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
 
-    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br>
-        <ol>
-        <li>내용</li>
-        <li>내용</li>
-        <li>내용</li>
-        </ol> <br> 예시 출력 화면   <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>
+    <div class="ex_img"> <hr class="hr1"> <p> 예시문구 br <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
     <!-- 출력 이미지 예 -->
 
     <p id="p5"></p>  <!-- 공백 -->
@@ -311,53 +310,99 @@
     <p style="text-align: center;"> 
 
         <br>
-        olordered list, 순서가 있는 list입니다.
-        <br> &lt;ul&gt;과 달리 앞에 기호가 아닌 숫자나 영문 순서가 들어갑니다. &lt;ul&gt;과 달리 사용할 수 있는 속성들이 몇 가지 있습니다.
+        position:static;일 때는 bottom, top, right, left 속성값을 추가하여 값을 주면 변동된 사실을 확인하실 수 있습니다. <br>
+        현재는 bottom, top, right, left 속성값을 주지 않아 바뀌지 않은 점을 볼 수 있습니다.
 
     </p>
 
     <!-- 문구 아래 공백 -->
     <p id="p6"></p>
 
-    <hr id="&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;">
+    <hr id="_self">
 
-     <!-- 수평선 사이 공백 -->
-     <p id="gap"> </p>
+    <!-- 수평선 사이 공백 -->
+    <p id="gap"> </p>
+    
+    <hr id="right">
 
-    <hr>
+    <!-- 부가 설명의 핵심(제목) -->
+    <p class="font">position:fixed;</p> 
 
-     <!-- dl, dt, dd -->
+    <p id="p2">  </p> <!-- 가로 공백 -->
+    
+    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: fixed; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
+        <br> ︙ <br> &lt;body&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
+    <!-- 예시 코드 -->
 
-     <!-- 부가 설명의 핵심(제목) -->
-     <p class="font">&lt;dl&gt; &lt;/dl&gt;, &lt;dt&gt; &lt;/dt&gt;, &lt;dd&gt; &lt;/dd&gt;</p>
+    <p class="break"> </p> <!-- 공백 -->
 
-     <p id="p2">  </p> <!-- 가로 공백 -->
-     
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;dl&gt; <br> &lt;dt&gt;내용&lt;/dt&gt; <br> &lt;dd&gt;내용&lt;/dd&gt; <br> &lt;dd&gt;내용&lt;/dd&gt; <br> &lt;dd&gt;내용&lt;/dd&gt; <br> &lt;/dl&gt; <br> 예시 문구 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
-     <!-- 예시 코드 -->
- 
-     <p class="break"> </p> <!-- 공백 -->
- 
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  <dl>
-        <dt>미디어</dt>
-        <dd>뉴스</dd>
-        <dd>스포츠</dd>
-        <dd>연예</dd>
-    </dl> <br> 예시 출력 화면 <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>
-     <!-- 출력 이미지 예 -->
- 
-     <p id="p5"></p>  <!-- 공백 -->
- 
-     <p style="text-align: center;"> 
- 
-         <br>
-         dl, definition list, 사전처럼 용어를 설명하는 목록입니다. 
-         <br> dt, definition term, 정의되는 용어의 제목을 넣을 때 사용합니다. 
-         <br> dd, definition description, 용어를 설명하는 데 사용합니다.
-     </p>
- 
-     <!-- 문구 아래 공백 -->
-     <p id="p6"></p>
-    <hr>
+    <div class="ex_img"> <hr class="hr1"> <p> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
+    <!-- 출력 이미지 예 -->
+
+    <p id="p5"></p>  <!-- 공백 -->
+
+    <p style="text-align: center;"> 
+
+        <br>
+        position:fixed;일 때는 스크롤을 해도 화면상에서 위치가 바뀌지 않습니다.. <br>
+        현재는 예시 화면에서 스크롤할 방법이 없어 설명할 방법이 없어 아쉽네요. <br>
+        오른쪽에 보시면 버튼2개, 하얀 직사각형이 고정된 걸 보실 수 있습니다. <br>
+        이 3개 모두 position:fixed;를 사용하여 고정시켰습니다.
+
+    </p>
+
+    <!-- 문구 아래 공백 -->
+    <p id="p6"></p>
+
+    <hr id="_self">
+
+    
+    <!-- 문구 아래 공백 -->
+    <p id="p6"></p>
+
+    <hr id="_self">
+
+    <!-- 수평선 사이 공백 -->
+    <p id="gap"> </p>
+    
+    <hr id="left">
+
+    <!-- 부가 설명의 핵심(제목) -->
+    <p class="font">position:fixed;</p> 
+
+    <p id="p2">  </p> <!-- 가로 공백 -->
+    
+    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: fixed; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
+        <br> ︙ <br> &lt;body&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
+    <!-- 예시 코드 -->
+
+    <p class="break"> </p> <!-- 공백 -->
+
+    <div class="ex_img"> <hr class="hr1"> <p> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
+    <!-- 출력 이미지 예 -->
+
+    <p id="p5"></p>  <!-- 공백 -->
+
+    <p style="text-align: center;"> 
+
+        <br>
+        position:fixed;일 때는 스크롤을 해도 화면상에서 위치가 바뀌지 않습니다.. <br>
+        현재는 예시 화면에서 스크롤할 방법이 없어 설명할 방법이 없어 아쉽네요. <br>
+        오른쪽에 보시면 버튼2개, 하얀 직사각형이 고정된 걸 보실 수 있습니다. <br>
+        이 3개 모두 position:fixed;를 사용하여 고정시켰습니다.
+
+    </p>
+
+    <!-- 문구 아래 공백 -->
+    <p id="p6"></p>
+
+    <hr id="_self">
+
+
+
+
+    
+
+
 </body>
 </html>
