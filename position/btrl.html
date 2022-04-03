@@ -265,14 +265,14 @@
 
     <hr>
 
-    <!-- _blank -->
+     <!-- top -->
 
     <!-- 부가 설명의 핵심(제목) -->
     <p class="font">bottom: auto | length | initial | inherit;</p> 
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;bottom: -100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
+    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;bottom: - 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
         <br> ︙ <br> &lt;body&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
@@ -292,22 +292,24 @@
 
     </p>
 
-    <!-- 문구 아래 공백 -->
-    <p id="p6"></p>
+        <!-- 문구 아래 공백 -->
+        <p id="p6"></p>
 
-    <hr id="_self">
-
-    <!-- 수평선 사이 공백 -->
-    <p id="gap"> </p>
+        <hr id="_self">
     
-    <hr id="top">
+        <!-- 수평선 사이 공백 -->
+        <p id="gap"> </p>
+        
+        <hr id="top">
+
+    <!-- top -->
 
     <!-- 부가 설명의 핵심(제목) -->
     <p class="font">top: auto | length | initial | inherit;</p> 
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;right: 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
+    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;top: 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
         <br> ︙ <br> &lt;body&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
@@ -321,10 +323,44 @@
     <p style="text-align: center;"> 
 
         <br>
+        top은 해당 태그 위치를 상단 기준으로 어느 높이에 위치시킬건지 지정하는 속성입니다. <br>
+        예시 코드는 top값을 100px를 주었는데요. 원래 자리로부터 100px만큼 아래로 떨어져 있는것을 확인하실 수 있습니다. <br>
+        이처럼 top은 해당 태그를 원래 위치로부터 아래로 apx만큼 떨어지게 하는 속성입니다.
+
+    </p>
+
+    <!-- 문구 아래 공백 -->
+    <p id="p6"></p>
+
+    <hr id="_self">
+
+    <!-- 수평선 사이 공백 -->
+    <p id="gap"> </p>
+    
+    <hr id="top">
+
+    <!-- 부가 설명의 핵심(제목) -->
+    <p class="font">right: auto | length | initial | inherit;</p> 
+
+    <p id="p2">  </p> <!-- 가로 공백 -->
+    
+    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;top : 100px; <br> &nbsp;&nbsp;&nbsp;right: 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
+        <br> ︙ <br> &lt;body&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
+    <!-- 예시 코드 -->
+
+    <p class="break"> </p> <!-- 공백 -->
+
+    <div class="ex_img"> <hr class="hr1"> <p id="ex3"> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
+    <!-- 출력 이미지 예 -->
+
+    <p id="p5"></p>  <!-- 공백 -->
+
+    <p style="text-align: center;"> 
+
+        <br>
 
         right 속성은 요소 위치를 우축 기준선으로 얼마나 좌측으로 위치시킬건지, 지정해주는 속성입니다. <br>
         예시 코드는 top값을 100px, right값을 100px 주었는데요. 원래 자리로부터 100px만큼 아래로 떨어져 있는것을 확인하실 수 있습니다. <br>
-        만약 반대로 -100px를 주었다면 원래 기준으로부터 -100px 위에 있겠죠?
 
     </p>
 
@@ -337,36 +373,6 @@
     <p id="gap"> </p>
 
     <hr>
-
-    <!-- bottom -->
-
-    <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">bottom: auto | length | initial | inherit;</p> 
-
-    <p id="p2">  </p> <!-- 가로 공백 -->
-    
-    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;-bottom: 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
-        <br> ︙ <br> &lt;body&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
-    <!-- 예시 코드 -->
-
-    <p class="break"> </p> <!-- 공백 -->
-
-    <div class="ex_img"> <hr class="hr1"> <p id="ex3"> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
-    <!-- 출력 이미지 예 -->
-
-    <p id="p5"></p>  <!-- 공백 -->
-
-    <p style="text-align: center;"> 
-
-        <br>
-        bottom은 해당 태그 위치를 하단 기준으로 어느 높이에 위치시킬건지 지정하는 속성입니다. <br>
-        예시 코드는 bottom값을 -100px를 주었는데요. 원래 자리로부터 -100px만큼 아래로 떨어져 있는것을 확인하실 수 있습니다. <br>
-        만약 100px를 주었다면 원래 기준으로부터 100px 위에 있겠죠?
-
-    </p>
-
-    <!-- 문구 아래 공백 -->
-    <p id="p6"></p>
 
 
 
