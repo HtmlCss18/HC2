@@ -9,11 +9,19 @@
     <title>a 태그 target 속성</title>
 
     <style>
+
+        /* left 예시화면 */
+        #ex4 {
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
         /*right 예시화면*/
         #ex3 {
             position: relative;
             top: 100px;
-            right: -100px;
+            right: 100px;
         }
         /*top 예시화면*/
         #ex2 {
@@ -23,7 +31,7 @@
         /*bottom 예시화면*/
         #ex1 {
             position: relative;
-            bottom: -100px;
+            bottom: 100px;
         }
 
         /* 이 화면 전체의 글자 색깔과 바탕화면 */
@@ -255,7 +263,7 @@
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer1">
     <div class="wrap">
-    <button class="btn-4" onclick="location.href='a_tag.html'">부가 설명 보러가기</button> <!-- a태그 설명하는 페이지 이동 -->
+    <button class="btn-4" onclick="location.href='position.html'">이전으로 돌아가기</button> <!-- a태그 설명하는 페이지 이동 -->
     </div>
     </footer>     
     
@@ -272,7 +280,7 @@
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;bottom: - 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
+    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;bottom: 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
         <br> ︙ <br> &lt;body&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
@@ -286,9 +294,8 @@
     <p style="text-align: center;"> 
 
         <br>
-        bottom은 해당 태그 위치를 하단 기준으로 어느 높이에 위치시킬건지 지정하는 속성입니다. <br>
-        예시 코드는 bottom값을 -100px를 주었는데요. 원래 자리로부터 -100px만큼 아래로 떨어져 있는것을 확인하실 수 있습니다. <br>
-        만약 100px를 주었다면 원래 기준으로부터 100px 위에 있겠죠?
+        bottom은 원래 위치로부터 사용자가 시정한 만큼 위로 위치시키는 지정하는 속성입니다. <br>
+        예시 코드는 bottom값을 -100px를 주었는데요. 원래 자리로부터 100px만큼 위로 떨어져 있는것을 확인하실 수 있습니다. <br>
 
     </p>
 
@@ -323,7 +330,6 @@
     <p style="text-align: center;"> 
 
         <br>
-        top은 해당 태그 위치를 상단 기준으로 어느 높이에 위치시킬건지 지정하는 속성입니다. <br>
         예시 코드는 top값을 100px를 주었는데요. 원래 자리로부터 100px만큼 아래로 떨어져 있는것을 확인하실 수 있습니다. <br>
         이처럼 top은 해당 태그를 원래 위치로부터 아래로 apx만큼 떨어지게 하는 속성입니다.
 
@@ -337,7 +343,7 @@
     <!-- 수평선 사이 공백 -->
     <p id="gap"> </p>
     
-    <hr id="top">
+    <hr id="right">
 
     <!-- 부가 설명의 핵심(제목) -->
     <p class="font">right: auto | length | initial | inherit;</p> 
@@ -359,20 +365,52 @@
 
         <br>
 
-        right 속성은 요소 위치를 우축 기준선으로 얼마나 좌측으로 위치시킬건지, 지정해주는 속성입니다. <br>
-        예시 코드는 top값을 100px, right값을 100px 주었는데요. 원래 자리로부터 100px만큼 아래로 떨어져 있는것을 확인하실 수 있습니다. <br>
+        right 속성은 요소 위치를 사용자가 지정한만큼 우측으로 위치시키는 속성입니다. <br>
+        예시 코드는 top값을 100px, right값을 100px 주었는데요. <br>
+        원래 자리로부터 아래로 100px만큼 오른쪽으로 100px만큼 아래로 떨어져 있는것을 확인하실 수 있습니다. <br>
+        실행시켰을 때 컴퓨터 기준으로 오른쪽이라 생각하시고 태그를 외우면 편할 것 같네요!
 
     </p>
 
     <!-- 문구 아래 공백 -->
     <p id="p6"></p>
 
-    <hr id="_self">
+    <hr id="left">
 
     <!-- 수평선 사이 공백 -->
     <p id="gap"> </p>
 
     <hr>
+
+    <!-- left 부분 -->
+
+     <!-- 부가 설명의 핵심(제목) -->
+    <p class="font">left: auto | length | initial | inherit;</p> 
+
+     <p id="p2">  </p>  <!-- 가로 공백 -->
+     
+     <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;top : 100px; <br> &nbsp;&nbsp;&nbsp;right: 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
+         <br> ︙ <br> &lt;body&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
+     <!-- 예시 코드 -->
+ 
+     <p class="break"> </p> <!-- 공백 -->
+ 
+     <div class="ex_img"> <hr class="hr1"> <p id="ex4"> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
+     <!-- 출력 이미지 예 -->
+ 
+     <p id="p5"></p>  <!-- 공백 -->
+ 
+     <p style="text-align: center;"> 
+ 
+         <br>
+ 
+         left 속성은 요소 위치를 사용자가 지정한만큼 좌측으로 위치시키는 속성입니다. <br>
+         예시 코드는 top값을 100px, left값을 100px 주었는데요. <br>
+         원래 자리로부터 아래로 100px만큼 왼쪽으로 100px만큼 아래로 떨어져 있는것을 확인하실 수 있습니다. <br>
+ 
+     </p>
+
+     <hr>
 
 
 
