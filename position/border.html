@@ -27,15 +27,23 @@
             float: left;
         }
 
+        #ex_ {
+            float: left;
+        }
+
         /* 이미지 가운데 정렬 */
         .ex_img {
-            float: left;
+            border: 5px ridge #ff5722;
         }
         
         /* 예시 코딩창과 출력 화면 사이의 여백 */
         .break {
             float: left;
             width: 50px;
+        }
+
+        #break2 {
+            height: 293px;
         }
 
 
@@ -47,7 +55,7 @@
         /* 예시 문구 왼쪽 공백 */
         #p2 {
             float: left;
-            width: 250px;
+            width: 210px;
         }
 
          /* 선 가로 크기 지정 */
@@ -204,29 +212,13 @@
 
 </head>
 <body>
-
-    <!-- 메뉴바-->
-    <nav>
-        <br> <br> <br> <br> <br> <br> <br> 
-        <hr>
-        <h1 id="h1"> position: ; </h1>
-        <ul class="menu">
-            <li> <a href="#static">static</a> </li>
-            <li> <a href="#relative">relative</a> </li>
-            <li> <a href="#fixed">fixed</a> </li>
-        </ul>
-        <hr>
-    </nav>
-
+    
     <div style="text-align:center;">
         <p id="p1">css</p> <!-- 제목 -->
     </div>
 
     <hr>
 
-    <p id="p7"> position: 속성값; <br> position 속성은 속성이 배치될 최종 위치를 결정합니다. </p>
-    
-    <hr id="static">
 
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer2">
@@ -241,27 +233,22 @@
     <button class="btn-4" onclick="location.href='btrl.html'">관련된 속성 알아보기</button> <!-- a태그 설명하는 페이지 이동 -->
     </div>
     </footer>     
-    
 
-     <!-- 수평선 사이 공백 -->
-     <p id="gap"> </p>
 
-    <hr>
-
-    <!-- position:static; -->
+    <!-- border -->
 
     <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">position:static;</p> 
+    <p class="font">border: border-width border-style border-color | initial | inherit;</p> 
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: static; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
-        <br> ︙ <br> &lt;body&gt; <br> &lt;p id:"ex"&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;border: 5px ridge #ff5722; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
+        <br> ︙ <br> &lt;body&gt; <br> &lt;div id:"ex"&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> &lt;/div&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
 
-    <div class="ex_img"> <hr class="hr1"> <p> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
+    <div id="ex_"> <hr class="hr1"> <div class="ex_img"> <p> 예시문구 </p> </div>  <p id="break2"></p> <hr class="hr1"> </div> 
     <!-- 출력 이미지 예 -->
 
     <p id="p5"></p>  <!-- 공백 -->
@@ -269,8 +256,7 @@
     <p style="text-align: center;"> 
 
         <br>
-        position:static;일 때는 bottom, top, right, left 속성값을 추가해도 기능이 무시됩니다. <br>
-        static은 HTML 문서 상에서 원래 있어야하는 위치에 배치됩니다.
+        border 속성은 테두리를 만드는 속성입니다.
 
     </p>
 
@@ -278,81 +264,6 @@
     <p id="p6"></p>
 
     <hr id="_self">
-
-    <!-- 수평선 사이 공백 -->
-    <p id="gap"> </p>
-    
-    <hr id="relative">
-
-    <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">position:relative;</p> 
-
-    <p id="p2">  </p> <!-- 가로 공백 -->
-    
-    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
-        <br> ︙ <br> &lt;body&gt; <br> &lt;p id:"ex"&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
-    <!-- 예시 코드 -->
-
-    <p class="break"> </p> <!-- 공백 -->
-
-    <div class="ex_img"> <hr class="hr1"> <p> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
-    <!-- 출력 이미지 예 -->
-
-    <p id="p5"></p>  <!-- 공백 -->
-
-    <p style="text-align: center;"> 
-
-        <br>
-        position:static;일 때는 bottom, top, right, left 속성값을 추가하여 값을 주면 변동된 사실을 확인하실 수 있습니다. <br>
-        현재는 bottom, top, right, left 속성값을 주지 않아 바뀌지 않은 점을 볼 수 있습니다.
-
-    </p>
-
-    <!-- 문구 아래 공백 -->
-    <p id="p6"></p>
-
-    <hr id="_self">
-
-    <!-- 수평선 사이 공백 -->
-    <p id="gap"> </p>
-    
-    <hr id="fixed">
-
-    <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">position:fixed;</p> 
-
-    <p id="p2">  </p> <!-- 가로 공백 -->
-    
-    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: fixed; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
-        <br> ︙ <br> &lt;body&gt; <br> &lt;p id:"ex"&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
-    <!-- 예시 코드 -->
-
-    <p class="break"> </p> <!-- 공백 -->
-
-    <div class="ex_img"> <hr class="hr1"> <p> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
-    <!-- 출력 이미지 예 -->
-
-    <p id="p5"></p>  <!-- 공백 -->
-
-    <p style="text-align: center;"> 
-
-        <br>
-        position:fixed;일 때는 스크롤을 해도 화면상에서 위치가 바뀌지 않습니다.. <br>
-        현재는 예시 화면에서 스크롤할 방법이 없어 설명할 방법이 없어 아쉽네요. <br>
-        오른쪽에 보시면 버튼2개, 하얀 직사각형이 고정된 걸 보실 수 있습니다. <br>
-        이 3개 모두 position:fixed;를 사용하여 고정시켰습니다.
-
-    </p>
-
-    <!-- 문구 아래 공백 -->
-    <p id="p6"></p>
-
-    <hr id="_self">
-
-
-
-
-    
 
 
 </body>
