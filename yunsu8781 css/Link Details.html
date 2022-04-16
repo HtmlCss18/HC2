@@ -6,33 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>a 태그 target 속성</title>
+    <title>font-</title>
 
     <style>
-
-        /* left 예시화면 */
-        #ex4 {
-            position: relative;
-            top: 100px;
-            left: 100px;
-        }
-
-        /*right 예시화면*/
-        #ex3 {
-            position: relative;
-            top: 100px;
-            right: 100px;
-        }
-        /*top 예시화면*/
-        #ex2 {
-            position: relative;
-            top: 100px;
-        }
-        /*bottom 예시화면*/
-        #ex1 {
-            position: relative;
-            bottom: 100px;
-        }
 
         /* 이 화면 전체의 글자 색깔과 바탕화면 */
         body {
@@ -53,6 +29,7 @@
 
         /* 이미지 가운데 정렬 */
         .ex_img {
+            text-align: center;
             float: left;
         }
         
@@ -97,7 +74,7 @@
 
         /* 긴 글 아래 공백 */
         #p6 {
-            height: 20px;
+            height: 50px;
         }
 
         /* 부가 설명의 제목 부분 */
@@ -233,25 +210,28 @@
     <nav>
         <br> <br> <br> <br> <br> <br> <br> 
         <hr>
-        <h1 id="h1"> position: ; </h1>
+        <h1 id="h1"> link </h1>
         <ul class="menu">
-            <li> <a href="#bottom">bottom</a> </li>
-            <li> <a href="#top">top</a> </li>
-            <li> <a href="#right">right</a> </li>
-            <li> <a href="#left">left</a> </li>
+            <li> <a href="#part1">link</a> </li>
+            <li> <a href="#part2">visited</a> </li>
+            <li> <a href="#part3">hover</a> </li>
+            <li> <a href="#part4">active</a> </li>
+            <li> <a href="#part5">focus</a> </li>
         </ul>
         <hr>
     </nav>
 
     <div style="text-align:center;">
-        <p id="p1">css</p> <!-- 제목 -->
+        <p id="p1">html</p> <!-- 제목 -->
     </div>
 
     <hr>
 
-    <p id="p7"> bottom, top, right, left 속성 <br> 어떠한 기준으로 부터 어떤 거리만큼 위치시킬건지 지정하는 속성입니다. </p>
+    <p id="p7">link controls
+    <br>
+    링크에 세부효과를 추가할수 있다.</p>
     
-    <hr id="bottom">
+    <hr id="part1">
 
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer2">
@@ -263,30 +243,100 @@
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer1">
     <div class="wrap">
-    <button class="btn-4" onclick="location.href='position.html'">이전으로 돌아가기</button> <!-- a태그 설명하는 페이지 이동 -->
+    <button class="btn-4" onclick="location.href='img.html'">전화면으로 이동</button> <!-- a태그 설명하는 페이지 이동 -->
     </div>
     </footer>     
     
+     <!-- 수평선 사이 공백 -->
+     <p id="gap"> </p>
+
+    <hr>
+
+    <!-- _blank -->
+
+    <!-- 부가 설명의 핵심(제목) -->
+    <p class="font">link</p> 
+    <p style="text-align: center;">방문하지 않은 링크</p>
+
+    <p id="p2">  </p> <!-- 가로 공백 -->
+    
+    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> . <br> &lt;img src="ex.png" alt="예시 이미지" width="350"&gt; <br> . <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <!-- 예시 코드 -->
+
+    <p class="break"> </p> <!-- 공백 -->
+
+    <div class="ex_img"> <hr class="hr1"> <img src="예시이미지 2.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
+    <!-- 출력 이미지 예 -->
+
+    <p id="p5"></p>  <!-- 공백 -->
+
+    <p style="text-align: center;"> 
+
+        <br>
+        normal:기본, italic : 이탤릭체(기울여 표시)
+
+    </p>
+
+    <!-- 문구 아래 공백 -->
+    <p id="p6"></p>
+
+    <hr id="part2">
+
+    <!-- 수평선 사이 공백 -->
+    <p id="gap"> </p>
+    
+    <hr>
+
+
+    <!-- _self -->
+    
+    <!-- 부가 설명의 핵심(제목) -->
+    <p class="font"> visited</p>
+    <p style="text-align: center;">방문한 링크</p>
+
+    <p id="p2">  </p> <!-- 가로 공백 -->
+    
+    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br> . <br> &lt;img src="ex.png" alt="" height="280"&gt; <br> . <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <!-- 예시 코드 -->
+
+    <p class="break"> </p> <!-- 공백 -->
+
+    <div class="ex_img"> <hr class="hr1"> <img src="예시이미지3.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
+    <!-- 출력 이미지 예 -->
+
+    <p id="p5"></p>  <!-- 공백 -->
+
+    <p style="text-align: center;"> 
+
+        <br>
+        100(lighter) ~ 400(normal) ~ 700(bold) ~ 900(bolder)
+    </p>
+
+    <!-- 문구 아래 공백 -->
+    <p id="p6"></p>
+
+    <hr id="part3">
 
      <!-- 수평선 사이 공백 -->
      <p id="gap"> </p>
 
     <hr>
 
-     <!-- top -->
+
+     <!-- _blank -->
 
     <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">bottom: auto | length | initial | inherit;</p> 
+    <p class="font">hover </p> 
+    <p style="text-align: center;">마우스 포인터를 올렸을 때</p>
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;bottom: 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
-        <br> ︙ <br> &lt;body&gt; <br> &lt;p id:"ex"&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> . <br> &lt;img src="ex.png" alt="예시 이미지" width="350"&gt; <br> . <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
 
-    <div class="ex_img"> <hr class="hr1"> <p id="ex1"> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
+    <div class="ex_img"> <hr class="hr1"> <img src="예시이미지 2.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
     <!-- 출력 이미지 예 -->
 
     <p id="p5"></p>  <!-- 공백 -->
@@ -294,69 +344,36 @@
     <p style="text-align: center;"> 
 
         <br>
-        bottom은 원래 위치로부터 사용자가 시정한 만큼 위로 위치시키는 지정하는 속성입니다. <br>
-        예시 코드는 bottom값을 -100px를 주었는데요. 원래 자리로부터 100px만큼 위로 떨어져 있는것을 확인하실 수 있습니다. <br>
-
-    </p>
-
-        <!-- 문구 아래 공백 -->
-        <p id="p6"></p>
-
-        <hr id="_self">
-    
-        <!-- 수평선 사이 공백 -->
-        <p id="gap"> </p>
-        
-        <hr id="top">
-
-    <!-- top -->
-
-    <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">top: auto | length | initial | inherit;</p> 
-
-    <p id="p2">  </p> <!-- 가로 공백 -->
-    
-    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;top: 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
-        <br> ︙ <br> &lt;body&gt; <br> &lt;p id:"ex"&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
-    <!-- 예시 코드 -->
-
-    <p class="break"> </p> <!-- 공백 -->
-
-    <div class="ex_img"> <hr class="hr1"> <p id="ex2"> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
-    <!-- 출력 이미지 예 -->
-
-    <p id="p5"></p>  <!-- 공백 -->
-
-    <p style="text-align: center;"> 
-
-        <br>
-        예시 코드는 top값을 100px를 주었는데요. 원래 자리로부터 100px만큼 아래로 떨어져 있는것을 확인하실 수 있습니다. <br>
-        이처럼 top은 해당 태그를 원래 위치로부터 아래로 apx만큼 떨어지게 하는 속성입니다.
+        설명
 
     </p>
 
     <!-- 문구 아래 공백 -->
     <p id="p6"></p>
 
-    <hr id="_self">
+    <hr id="part4">
 
     <!-- 수평선 사이 공백 -->
     <p id="gap"> </p>
     
-    <hr id="right">
+    <hr>
 
+     <!-- _parent -->
+
+     <!-- _self -->
+    
     <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">right: auto | length | initial | inherit;</p> 
+    <p class="font">active</p>
+    <p style="text-align: center;">마우스를 클릭했을 때 </p>
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;top : 100px; <br> &nbsp;&nbsp;&nbsp;right: 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
-        <br> ︙ <br> &lt;body&gt; <br> &lt;p id:"ex"&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br> . <br> &lt;img src="ex.png" alt="" height="280"&gt; <br> . <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
 
-    <div class="ex_img"> <hr class="hr1"> <p id="ex3"> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
+    <div class="ex_img"> <hr class="hr1"> <img src="예시이미지3.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
     <!-- 출력 이미지 예 -->
 
     <p id="p5"></p>  <!-- 공백 -->
@@ -364,38 +381,36 @@
     <p style="text-align: center;"> 
 
         <br>
-
-        right 속성은 요소 위치를 사용자가 지정한만큼 우측으로 위치시키는 속성입니다. <br>
-        예시 코드는 top값을 100px, right값을 100px 주었는데요. <br>
-        원래 자리로부터 아래로 100px만큼 오른쪽으로 100px만큼 아래로 떨어져 있는것을 확인하실 수 있습니다. <br>
-        실행시켰을 때 컴퓨터 기준으로 오른쪽이라 생각하시고 태그를 외우면 편할 것 같네요!
+        단위 : px, em, small, big 등
 
     </p>
 
     <!-- 문구 아래 공백 -->
     <p id="p6"></p>
 
-    <hr id="left">
+    <hr id="part5">
 
-    <!-- 수평선 사이 공백 -->
-    <p id="gap"> </p>
+     <!-- 수평선 사이 공백 -->
+     <p id="gap"> </p>
 
     <hr>
 
-    <!-- left 부분 -->
+     <!-- _parent -->
+
+     
 
      <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">left: auto | length | initial | inherit;</p> 
+     <p class="font">focus</p>
+     <p style="text-align: center;">focus 이동</p>
 
-     <p id="p2">  </p>  <!-- 가로 공백 -->
+     <p id="p2">  </p> <!-- 가로 공백 -->
      
-     <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;position: relative; <br> &nbsp;&nbsp;&nbsp;top : 100px; <br> &nbsp;&nbsp;&nbsp;right: 100px; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
-         <br> ︙ <br> &lt;body&gt; <br> &lt;p id:"ex"&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
+     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> . <br>  &lt;img src="ex.png" alt="예시 이미지 대체텍스트"&gt; <br> . <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
      <!-- 예시 코드 -->
  
      <p class="break"> </p> <!-- 공백 -->
  
-     <div class="ex_img"> <hr class="hr1"> <p id="ex4"> 예시문구 <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>
+     <div class="ex_img"> <hr class="hr1"> <img src="예시이미지4.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
      <!-- 출력 이미지 예 -->
  
      <p id="p5"></p>  <!-- 공백 -->
@@ -403,15 +418,21 @@
      <p style="text-align: center;"> 
  
          <br>
- 
-         left 속성은 요소 위치를 사용자가 지정한만큼 좌측으로 위치시키는 속성입니다. <br>
-         예시 코드는 top값을 100px, left값을 100px 주었는데요. <br>
-         원래 자리로부터 아래로 100px만큼 왼쪽으로 100px만큼 아래로 떨어져 있는것을 확인하실 수 있습니다. <br>
- 
+        설명
      </p>
+ 
+     <!-- 문구 아래 공백 -->
+     <p id="p6"></p>
+ 
+    <hr  id="part6">
 
-     <hr>
+     <!-- 수평선 사이 공백 -->
+     <p id="gap"> </p>
 
+    <hr>
+
+
+    
 
 
 </body>
