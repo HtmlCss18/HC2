@@ -10,6 +10,35 @@
 
     <style>
 
+        .ex_img_1 {
+            margin-top: -25px;
+            margin-right: 10px;
+            margin-bottom: 30px;
+            margin-left: 100px;
+        }
+
+        .ex_img_2.four {
+            margin: 20px 50px 30px 50px;
+        }
+
+        .ex_img_2.three {
+            margin: 20px 50px 30px;
+        }
+
+        .ex_img_3 {
+            width: 300px;
+            margin: auto;
+            border: 1px solid red;
+        }
+
+        #break2 {
+            height: 293px;
+        }
+
+        #ex_ {
+            float: left;
+        }
+
         /* 이 화면 전체의 글자 색깔과 바탕화면 */
         body {
             background-color: #F2EDD7;
@@ -281,8 +310,8 @@
 
     <p class="break"> </p> <!-- 공백 -->
 
-    <div class="ex_img"> <hr class="hr1"> <img src="margin.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
-    <!-- 출력 이미지 예 -->
+    <div id="ex_"> <hr class="hr1"> <div class="ex_img_1"> <p> 예시문구 </p> <p id="break2"></p> </div>  <hr class="hr1"> </div> </div>  
+     <!-- 출력 이미지 예 -->
 
     <p id="p5"></p>  <!-- 공백 -->
 
@@ -321,7 +350,7 @@
  
      <p class="break"> </p> <!-- 공백 -->
  
-     <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
+     <div id="ex_"> <hr class="hr1"> <div class="ex_img_2"> <p> 예시문구 </p> </div>  <p id="break2"></p> <hr class="hr1"> </div> </div>
      <!-- 출력 이미지 예 -->
  
      <p id="p5"></p>  <!-- 공백 -->
@@ -371,7 +400,7 @@
  
      <p class="break"> </p> <!-- 공백 -->
  
-     <div class="ex_img"> <hr class="hr1"> <img src="margin_auto.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
+     <div id="ex_"> <hr class="hr1"> <div class="ex_img_3"> <p> 예시문구 </p> </div>  <p id="break2"></p> <hr class="hr1"> </div> </div>
      <!-- 출력 이미지 예 -->
  
      <p id="p5"></p>  <!-- 공백 -->
