@@ -1,4 +1,4 @@
-<!-- 긴 설명이 아예 없을 때 -->
+<!-- 긴 설명이 2줄 일 때 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,11 +6,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>button 태그</title>
+    <title>a 태그</title>
 
     <style>
 
-    body {
+        body {
             background-color: #F2EDD7;
             color: #755139;
         }
@@ -35,6 +35,7 @@
             float: left;
             width: 50px;
         }
+
 
         /* 제목 글씨 크기 바꾸기 */
         #p1 {
@@ -66,13 +67,18 @@
         /* 예시 문구 아래 공백 */
         #p5 {
             clear: left;
-            height: 185px;
+            height: 100px;
         }
 
         /* 전체 p태그에 20px 넣기 */
         p {
             font-size: 20px;
         }
+
+        #p3 {
+            font-size: 20px;
+        }
+
 
         /* 고정 버튼 꾸미기 */
         .footer1 {
@@ -146,6 +152,7 @@
             top: 50%;
              width: 0;
         }
+    
 
     </style>
 
@@ -155,14 +162,14 @@
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer2">
     <div class="wrap">
-    <button class="btn-4" onclick="location.href='/Users/chanm/Desktop/전공/html/HtmlCss/HC2/main.html'">홈페이지 이동하기</button> <!-- 메인 화면으로 이동 -->
+    <button class="btn-4" onclick="location.href='main.html'">홈페이지 이동하기</button> <!-- 메인 화면으로 이동 -->
     </div>
     </footer>  
-        
+    
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer1">
     <div class="wrap">
-    <button class="btn-4" onclick="location.href='button_tag_type.html'">부가 설명 보러가기</button> <!-- a태그 설명하는 페이지 이동 -->
+    <button class="btn-4" onclick="location.href='a_tag_target.html'">부가 설명 보러가기</button> <!-- a태그 설명하는 페이지 이동 -->
     </div>
     </footer>     
 
@@ -172,8 +179,8 @@
 
     <hr>
 
-    <h1> &lt;button&gt; &lt;/button&gt; </h1>
-    <p> 버튼 태그 </p>
+    <h1> &lt;a href=""&gt;, &lt;/a&gt; </h1>
+    <p>웹 페이지나 외부 사이트로 연결하는 태그</p>
     
     <hr>
 
@@ -181,22 +188,26 @@
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  . <br> &lt;button&gt; 버튼입니다. &lt;/button&gt; <br>  .  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;a href="https://github.com/HtmlCss18"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
 
-    <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/button_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
+    <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
     <!-- 출력 이미지 예 -->
-   
-    <br>
-    <br>
-    <br>
+
     <p id="p5"></p>  <!-- 공백 -->
 
+    <p id="p3"> 
 
+        <br>
+        예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 넘어가게 됩니다.
+
+    </p>
 
     <hr>
+
+   
 
 </body>
 </html>

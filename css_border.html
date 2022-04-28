@@ -10,6 +10,11 @@
 
     <style>
 
+        #explanation {
+            position: relative;
+            left: 13%;
+        }
+
         /* 이 화면 전체의 글자 색깔과 바탕화면 */
         body {
             background-color: #F2EDD7;
@@ -27,16 +32,23 @@
             float: left;
         }
 
+        #ex_ {
+            float: left;
+        }
+
         /* 이미지 가운데 정렬 */
         .ex_img {
-            text-align: center;
-            float: left;
+            border: 5px ridge #ff5722;
         }
         
         /* 예시 코딩창과 출력 화면 사이의 여백 */
         .break {
             float: left;
             width: 50px;
+        }
+
+        #break2 {
+            height: 293px;
         }
 
 
@@ -48,7 +60,7 @@
         /* 예시 문구 왼쪽 공백 */
         #p2 {
             float: left;
-            width: 250px;
+            width: 210px;
         }
 
          /* 선 가로 크기 지정 */
@@ -74,7 +86,7 @@
 
         /* 긴 글 아래 공백 */
         #p6 {
-            height: 50px;
+            height: 20px;
         }
 
         /* 부가 설명의 제목 부분 */
@@ -205,65 +217,43 @@
 
 </head>
 <body>
-
-    <!-- 메뉴바-->
-    <nav>
-        <br> <br> <br> <br> <br> <br> <br> 
-        <hr>
-        <h1 id="h1"> target </h1>
-        <ul class="menu">
-            <li> <a href="#_blank">_blank</a> </li>
-            <li> <a href="#_self">_self</a> </li>
-            <li> <a href="#_parent">_parent</a> </li>
-            <li> <a href="#_top">_top</a> </li>
-        </ul>
-        <hr>
-    </nav>
-
+    
     <div style="text-align:center;">
-        <p id="p1">html</p> <!-- 제목 -->
+        <p id="p1">css</p> <!-- 제목 -->
     </div>
 
     <hr>
 
-    <p id="p7"> &lt;a href="" target=""&gt;, &lt;/a&gt; 
-    <br>
-    target : 어떤 창에서 이동할 지 설정할 수 있는 속성</p>
-    
-    <hr id="_blank">
 
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer2">
     <div class="wrap">
-    <button class="btn-4" onclick="location.href='/Users/chanm/Desktop/전공/html/HtmlCss/HC2/main.html'">홈페이지 이동하기</button> <!-- 메인 화면으로 이동 -->
+    <button class="btn-4" onclick="location.href='main.html'">홈페이지 이동하기</button> <!-- 메인 화면으로 이동 -->
     </div>
     </footer>  
 
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer1">
     <div class="wrap">
-    <button class="btn-4" onclick="location.href='a_tag.html'">전화면으로 이동</button> <!-- a태그 설명하는 페이지 이동 -->
+    <button class="btn-4" onclick="location.href='btrl.html'">관련된 속성 알아보기</button> <!-- a태그 설명하는 페이지 이동 -->
     </div>
     </footer>     
-    
-     <!-- 수평선 사이 공백 -->
-     <p id="gap"> </p>
 
-    <hr>
 
-    <!-- _blank -->
+    <!-- border -->
 
     <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">target="_blank"</p> 
+    <p class="font">border: border-width border-style border-color | initial | inherit;</p> 
 
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;a href="https://github.com/HtmlCss18" target="_blank"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;border: 5px ridge #ff5722; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
+        <br> ︙ <br> &lt;body&gt; <br> &lt;div id:"ex"&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> &lt;/div&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
     <!-- 예시 코드 -->
 
     <p class="break"> </p> <!-- 공백 -->
 
-    <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
+    <div id="ex_"> <hr class="hr1"> <div class="ex_img"> <p> 예시문구 </p> </div>  <p id="break2"></p> <hr class="hr1"> </div> 
     <!-- 출력 이미지 예 -->
 
     <p id="p5"></p>  <!-- 공백 -->
@@ -271,7 +261,7 @@
     <p style="text-align: center;"> 
 
         <br>
-        예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 새로운 창에서 넘어가게 됩니다.
+        border 속성은 테두리를 만드는 속성입니다.
 
     </p>
 
@@ -280,111 +270,13 @@
 
     <hr id="_self">
 
-    <!-- 수평선 사이 공백 -->
-    <p id="gap"> </p>
-    
-    <hr>
-
-
-    <!-- _self -->
-    
-    <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">target="_self"</p>
-
-    <p id="p2">  </p> <!-- 가로 공백 -->
-    
-    <div class="ex"> <hr class="hr1">  <p> . <br> . <br> . <br> &lt;a href="https://github.com/HtmlCss18" target="_self"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
-    <!-- 예시 코드 -->
-
-    <p class="break"> </p> <!-- 공백 -->
-
-    <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
-    <!-- 출력 이미지 예 -->
-
-    <p id="p5"></p>  <!-- 공백 -->
-
-    <p style="text-align: center;"> 
-
-        <br>
-        예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 창에서 넘어가게 됩니다.
-
-    </p>
-
-    <!-- 문구 아래 공백 -->
-    <p id="p6"></p>
-
-    <hr id="_parent">
-
-     <!-- 수평선 사이 공백 -->
-     <p id="gap"> </p>
-
-    <hr>
-
-     <!-- _parent -->
-
-     <!-- 부가 설명의 핵심(제목) -->
-     <p class="font">target="_parent"</p>
-
-     <p id="p2">  </p> <!-- 가로 공백 -->
-     
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;a href="https://github.com/HtmlCss18" target="_parent"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
-     <!-- 예시 코드 -->
- 
-     <p class="break"> </p> <!-- 공백 -->
- 
-     <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
-     <!-- 출력 이미지 예 -->
- 
-     <p id="p5"></p>  <!-- 공백 -->
- 
-     <p style="text-align: center;"> 
- 
-         <br>
-         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 창에서 넘어가게 됩니다.
-         <br>현재 화면을 불러낸 창이 없다면 현재 탭에서 화면이 넘어가게 됩니다.
-     </p>
- 
-     <!-- 문구 아래 공백 -->
-     <p id="p6"></p>
- 
-    <hr  id="_top">
-
-     <!-- 수평선 사이 공백 -->
-     <p id="gap"> </p>
-
-    <hr>
-
-     <!-- _top -->
-
-     <!-- 부가 설명의 핵심(제목) -->
-     <p class="font">target="_top"</p>
-
-     <p id="p2">  </p> <!-- 가로 공백 -->
-     
-     <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br>  &lt;a href="https://github.com/HtmlCss18" target="_top"&gt; <br> 예시 문구 <br>  &lt;/a&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
-     <!-- 예시 코드 -->
- 
-     <p class="break"> </p> <!-- 공백 -->
- 
-     <div class="ex_img"> <hr class="hr1"> <img src="tag2_img/a_tag.png" alt="예시 출력화면" class="img1"> <hr class="hr1"> </div>
-     <!-- 출력 이미지 예 -->
- 
-     <p id="p5"></p>  <!-- 공백 -->
- 
-     <p style="text-align: center;"> 
- 
-         <br>
-         예시 문구를 클릭하면 'https://github.com/HtmlCss18' 화면으로 현재 화면을 불러낸 최상위 탭에서 전환되게 됩니다.
-         <br>최상위 탭이 없다면 현재 창에서 화면이 넘어가게 됩니다.
-     </p>
- 
-     <!-- 문구 아래 공백 -->
-     <p id="p6"></p>
- 
-     <hr>
-
-    
-
+    <p id="explanation"> 부가 설명 </p>                    
+     <p id="explanation"> border-width border-style border-color | initial | inherit </p>
+     <p id="explanation"> border-width : 선의 두께</p>
+     <p id="explanation"> border-style : 선의 모양 </p>
+    <p id="explanation"> border-color : 선의 색상</p>
+    <p id="explanation"> initial : 기본값.</p>
+    <p id="explanation"> inherit : 부모 요소의 속성값을 상속받음.</p>
 
 </body>
 </html>

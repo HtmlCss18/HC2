@@ -10,11 +10,6 @@
 
     <style>
 
-        #explanation {
-            position: relative;
-            left: 13%;
-        }
-
         /* 이 화면 전체의 글자 색깔과 바탕화면 */
         body {
             background-color: #F2EDD7;
@@ -32,23 +27,15 @@
             float: left;
         }
 
-        #ex_ {
-            float: left;
-        }
-
         /* 이미지 가운데 정렬 */
         .ex_img {
-            border: 5px ridge #ff5722;
+            float: left;
         }
         
         /* 예시 코딩창과 출력 화면 사이의 여백 */
         .break {
             float: left;
             width: 50px;
-        }
-
-        #break2 {
-            height: 293px;
         }
 
 
@@ -60,7 +47,7 @@
         /* 예시 문구 왼쪽 공백 */
         #p2 {
             float: left;
-            width: 210px;
+            width: 250px;
         }
 
          /* 선 가로 크기 지정 */
@@ -104,6 +91,13 @@
         #p7 {
             text-align: center;
             font-size: 25px;
+        }
+
+         /* 맨 위에 있는 target에 대한 설명 부분 */
+         #p8 {
+            font-size: 25px;
+            position: relative;
+            left: 10%;
         }
 
         
@@ -217,66 +211,30 @@
 
 </head>
 <body>
-    
+
     <div style="text-align:center;">
         <p id="p1">css</p> <!-- 제목 -->
     </div>
 
     <hr>
 
+    <p id="p7"> id, class, type 지정자 </p>
+    
+    <hr id="static">
 
     <!-- 왼쪽 상단에 있는 버튼 -->
     <footer class="footer2">
     <div class="wrap">
-    <button class="btn-4" onclick="location.href='/Users/chanm/Desktop/전공/html/HtmlCss/HC2/main.html'">홈페이지 이동하기</button> <!-- 메인 화면으로 이동 -->
+    <button class="btn-4" onclick="location.href='main.html'">홈페이지 이동하기</button> <!-- 메인 화면으로 이동 -->
     </div>
     </footer>  
 
-    <!-- 왼쪽 상단에 있는 버튼 -->
-    <footer class="footer1">
-    <div class="wrap">
-    <button class="btn-4" onclick="location.href='btrl.html'">관련된 속성 알아보기</button> <!-- a태그 설명하는 페이지 이동 -->
-    </div>
-    </footer>     
+    <p id="p7"> 어떤 지정자를 사용하느냐에 따라 문법이 달라집니다. </p>
 
+    <p id="p8"> <br> 1. id 지정자 <br>html | &lt;p id="id값"&gt; &lt;/p&gt; <br>css | #id값 {} </p>
+    <p id="p8"> <br> 1. class 지정자 <br>html | &lt;p class="class값"&gt; &lt;/p&gt; <br>css | .class값 {} </p>
+    <p id="p8"> <br> 1. type 지정자 <br>html | &lt;p&gt; &lt;/p&gt; <br>css | p {} </p>
 
-    <!-- border -->
-
-    <!-- 부가 설명의 핵심(제목) -->
-    <p class="font">border: border-width border-style border-color | initial | inherit;</p> 
-
-    <p id="p2">  </p> <!-- 가로 공백 -->
-    
-    <div class="ex"> <hr class="hr1"> <p> . <br> &lt;style&gt; <br> &nbsp;&nbsp;&nbsp;#ex { <br> &nbsp;&nbsp;&nbsp;border: 5px ridge #ff5722; <br> &nbsp;&nbsp;&nbsp;} <br>  &lt;/style&gt;  
-        <br> ︙ <br> &lt;body&gt; <br> &lt;div id:"ex"&gt; <br> &lt;p&gt; <br> &nbsp;&nbsp;&nbsp;예시문구 <br> &lt;/p&gt; <br> &lt;/div&gt; <br> . <br> <hr class="hr1">  </p>   </div>  
-    <!-- 예시 코드 -->
-
-    <p class="break"> </p> <!-- 공백 -->
-
-    <div id="ex_"> <hr class="hr1"> <div class="ex_img"> <p> 예시문구 </p> </div>  <p id="break2"></p> <hr class="hr1"> </div> 
-    <!-- 출력 이미지 예 -->
-
-    <p id="p5"></p>  <!-- 공백 -->
-
-    <p style="text-align: center;"> 
-
-        <br>
-        border 속성은 테두리를 만드는 속성입니다.
-
-    </p>
-
-    <!-- 문구 아래 공백 -->
-    <p id="p6"></p>
-
-    <hr id="_self">
-
-    <p id="explanation"> 부가 설명 </p>                    
-     <p id="explanation"> border-width border-style border-color | initial | inherit </p>
-     <p id="explanation"> border-width : 선의 두께</p>
-     <p id="explanation"> border-style : 선의 모양 </p>
-    <p id="explanation"> border-color : 선의 색상</p>
-    <p id="explanation"> initial : 기본값.</p>
-    <p id="explanation"> inherit : 부모 요소의 속성값을 상속받음.</p>
 
 </body>
 </html>
