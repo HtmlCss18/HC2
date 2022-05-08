@@ -183,6 +183,14 @@
             top: 50%;
              width: 0;
         }
+        #img_size{
+            height: 50;
+            left: 50;
+        }
+        .img1 {
+            height: 263px;
+            width:  500px;
+        }
 
     </style>
 
@@ -197,8 +205,7 @@
         <ul class="menu">
             <li> <a href="#part1">autoplay</a> </li>
             <li> <a href="#part2">loop</a> </li>
-            <li> <a href="#part3">volume</a> </li>
-            <li> <a href="#part4">muted</a> </li>
+            <li> <a href="#part3">muted</a> </li>
         </ul>
         <hr>
     </nav>
@@ -227,7 +234,8 @@
     <hr id="part1">
 
     <h1 style="text-align: center;"> autoplay </h1>
-    <p style="text-align: center;">음악 및 동영상을 자동으로 재생.</p>
+    <p style="text-align: center;">&lt;video autoplay&gt;</p>
+    
     
     <hr>
 
@@ -235,22 +243,22 @@
  
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;video controls loop&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/video&gt; <br> . <br> . <br> . <br>   <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;video controls autoplay&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/video&gt; <br> . <br> . <br> . <br>   <hr class="hr1">  </p>   </div>  
     <p class="break"> </p> <!-- 공백 -->
     <!-- 예시 코드 -->
 
-    <div class="ex"> <hr class="hr1"> <p>  . <br> . <br> . <br> &lt;audio controls loop&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/audio&gt; <br> . <br> .  <br> .  <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p>  . <br> . <br> . <br> &lt;audio controls autoplay&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/audio&gt; <br> . <br> .  <br> .  <br> <hr class="hr1">  </p>   </div>  
     <p class="break"> </p> <!-- 공백 -->
     <!-- 예시 코드 -->
 
-    <div class="ex"> <hr class="hr1"> <p>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex" > <hr class="hr1"> <video controls="controls" autoplay="autoplay" class="img1" > <source src="Skyscrapers - 80724.mp4" type=""></video> <hr class="hr1"> </p>   </div>  
     <p class="break"> </p> <!-- 공백 -->
     <!-- 예시 코드 -->
 
      <p id="p5"></p>  <!-- 공백 -->
 
     <p id="p3"> 
-        추가설명
+        음악 및 동영상을 자동으로 재생.
     </p>
     
     <p id="p6"></p>
@@ -264,7 +272,7 @@
     <hr >
 
     <h1 style="text-align: center;">loop </h1>
-    <p style="text-align: center;">현재 오디오, 동영상을 반복 재생</p>
+    <p style="text-align: center;">&lt;video loop&gt;</p>
     
     <hr>
 
@@ -272,22 +280,22 @@
  
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> <br> <br> <br> <br> <br> <br> <br> <br> <br>   <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;video controls loop&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/video&gt; <br> . <br> .  <br> .  <br>   <hr class="hr1">  </p>   </div>  
     <p class="break"> </p> <!-- 공백 -->
     <!-- 예시 코드 -->
 
-    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;p&gt; <br> 예시 문구입니다. <br>  &lt;/p&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;audio controls loop&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/audio&gt; <br> . <br> .  <br> .  <br> <hr class="hr1">  </p>   </div>  
     <p class="break"> </p> <!-- 공백 -->
     <!-- 예시 코드 -->
 
-    <div class="ex"> <hr class="hr1"> <p>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex" > <hr class="hr1"> <video controls loop class="img1" > <source src="Skyscrapers - 80724.mp4" type=""></video> <hr class="hr1"> </p>   </div>
     <p class="break"> </p> <!-- 공백 -->
     <!-- 예시 코드 -->
 
     <p id="p5"></p>  <!-- 공백 -->
 
     <p id="p3"> 
-        추가설명
+        현재 오디오, 동영상을 반복 재생
     </p>
 
     <p id="p6"></p>  <!-- 공백 -->
@@ -300,45 +308,8 @@
 
     <hr>
 
-    <h1 style="text-align: center;">volume</h1>
-    <p style="text-align: center;">오디오, 동영상 재생 볼륨 설정할 수 있는 속성</p>
-    
-    <hr>
-
-    <p id="p4"></p> <!-- 세로 공백 -->
- 
-    <p id="p2">  </p> <!-- 가로 공백 -->
-    
-    <div class="ex"> <hr class="hr1"> <p>  . <br> . <br> . <br> &lt;video controls loop&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/video&gt; <br> . <br> . <br> . <br>    <hr class="hr1">  </p>   </div>  
-    <p class="break"> </p> <!-- 공백 -->
-    <!-- 예시 코드 -->
-
-    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;p&gt; <br> 예시 문구입니다. <br>  &lt;/p&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
-    <p class="break"> </p> <!-- 공백 -->
-    <!-- 예시 코드 -->
-
-    <div class="ex"> <hr class="hr1"> <p>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>  
-    <p class="break"> </p> <!-- 공백 -->
-    <!-- 예시 코드 -->
-
-    <p id="p5"></p>  <!-- 공백 -->
-
-    <p id="p3"> 
-        추가설명
-    </p>
-
-    <p id="p6"></p>  <!-- 공백 -->
-    
-    <hr>
-
-
-    <p id="part4"></p>
-
-
-    <hr>
-
     <h1 style="text-align: center;"> muted </h1>
-    <p style="text-align: center;">오디오, 비디오 출력 음소거</p>
+    <p style="text-align: center;">&lt;audio muted&gt;</p>
     
     <hr>
 
@@ -346,22 +317,22 @@
  
     <p id="p2">  </p> <!-- 가로 공백 -->
     
-    <div class="ex"> <hr class="hr1"> <p> <br> <br> <br> <br> <br> <br> <br> <br> <br>   <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p>. <br> . <br> . <br> &lt;video controls  muted&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/video&gt; <br> . <br> .  <br> .  <br>   <hr class="hr1">  </p>   </div>  
     <p class="break"> </p> <!-- 공백 -->
     <!-- 예시 코드 -->
 
-    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;p&gt; <br> 예시 문구입니다. <br>  &lt;/p&gt;  <br> . <br> . <br> . <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex"> <hr class="hr1"> <p> . <br> . <br> . <br> &lt;audio controls  muted&gt; <br> &lt;source src=" " type=""&gt; <br> &lt;/audio&gt; <br> . <br> .  <br> .  <br> <hr class="hr1">  </p>   </div>  
     <p class="break"> </p> <!-- 공백 -->
     <!-- 예시 코드 -->
 
-    <div class="ex"> <hr class="hr1"> <p>  <br> <br> <br> <br> <br> <br> <br> <br> <br> <hr class="hr1">  </p>   </div>  
+    <div class="ex" > <hr class="hr1"> <video controls muted class="img1" > <source src="Skyscrapers - 80724.mp4" type=""></video> <hr class="hr1"> </p>   </div> 
     <p class="break"> </p> <!-- 공백 -->
     <!-- 예시 코드 -->
 
     <p id="p5"></p>  <!-- 공백 -->
 
     <p id="p3"> 
-        추가설명
+        오디오, 비디오 출력 음소거
     </p>
 
     <p id="p6"></p>  <!-- 공백 -->
